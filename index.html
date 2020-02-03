@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta author="Jennifer Nicolay" />
+		<title>Plan A Förderseite</title>
+		<script language="javascript" type="text/javascript" src="slider.js"></script>
+	</head>
+	<body class="background">
+		<header id="stickyHeader">
+		<script>
+			window.onscroll = function() {myFunction()};
+
+			var header = document.getElementById("stickyHeader");
+			var sticky = header.offsetTop;
+
+			function myFunction() {
+	  		if (window.pageYOffset > sticky) {
+	    	header.classList.add("sticky");
+	  	} else {
+	    	header.classList.remove("sticky");
+	  	}
+		}
+		</script>
+
+			<div class="header-text">
+				<img class="right" src="planA-Logo.png" alt="Plan A Logo" width="300px">
+<!--Hamburger-Menü-->
+				<nav>
+					<div id="menuToggle">
+						<input type="checkbox" />
+						<span></span>
+						<span></span>
+						<span></span>
+						<ul id="menu">
+							<a href="https://plan-a.jetzt"><li>Home</li></a>
+							<a href="#termine"><li>Anmelden</li></a>
+							<a href="#engagement"><li>Engagement</li></a>
+							<a href="#spenden"><li>Spenden</li></a>
+							<a href="#baseCamp"><li>baseCamp</li></a>
+							<a href="#impressum"><li>Impressum</li></a>
+						</ul>
+					</div>
+				</nav>
+<!--Menü Ende-->
+			</div>
+		</header>
+			<div class="pic-heading fullwidth-pic content">
+				<img class="slider" name="slide" alt="Am Set von Plan A">
+				<span>
+					<img id="fade-in" src="plan-alle.png">
+				</span>
+			</div>
+		<section class="blog" id="orelse">
+			<div class="alter-text">
+				<h1>Spenden Sie jetzt für Vorbilder</h1>
+				<br>
+				<video src="trailer.mov" type="video/mov" width="1500" height="auto"
+					 poster="trailer-standbild.jpg" autobuffer autoplay controls>
+				<div>Leider unterstützt Ihr Browser kein HTML5. Wir empfehlen, eine aktuelle Version herunterzuladen.</div>
+				</video>
+			</div>
+			<article class="left text">
+				<h2>PLAN A in Zahlen</h2>
+				<img class="left teaser" src="lampen.jpg" alt="Beleuchtung im Industrial Style" width="40%">
+					<p>A text in a nutshell is a nutshell in a text.</br>
+						And yet - it is a text and a nutshell!
+					</p>
+					<button id="myAcc" onclick="toggle()">Mehr lesen</button>
+					<p id="acc">Test Textblock bla bla bla bla</p>
+			</article>
+			<article class="left">
+				<h2>JobCamp</h2>
+				<img src="interview04.jpg" alt="Interview">
+			<p>Test Text blabla bla bla bla</p>
+			</article>
+			<article>
+				<h2>baseCamp</h2>
+				<img src="maske.jpg" alt="Testimonial in der Maske">
+				<p>Test Text bla bla bla</p>
+			</article>
+		</section>
+		<section class="blog">
+			<h1 class="alter-text">Besuchen Sie das baseCamp in Frankfurt</h1>
+		</section>
+		<footer>Last updated: Jan 2020 // Page created for Plan A Initiative
+		</footer>
+	</body>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="menu.css">
+<!--	<link rel="stylesheet" type="text/css" href="opacity.css">
+     	<script src="functions.js"></script>-->
+</html>
