@@ -24,7 +24,7 @@ img, embed, object, video {
   max-width: 100%;
 }
 .parallax {
-  background-image: url("img/image03.jpg");
+  background-image: url("image03.jpg");
   height: 700px;
   background-attachment: fixed;
   background-position: center;
