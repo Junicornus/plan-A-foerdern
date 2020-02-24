@@ -24,7 +24,7 @@ img, embed, object, video {
   max-width: 100%;
 }
 .parallax {
-  background-image: url("image03.jpg");
+  background-image: url("img/image03.jpg");
   height: 700px;
   background-attachment: fixed;
   background-position: center;
@@ -65,7 +65,7 @@ img, embed, object, video {
     margin:7px;
     text-align:left;
     border-radius: 8px;
-    height: 500px;
+    min-height: 500px;
 }
 .white-box {
     background: linear-gradient(45deg, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 70%,rgba(255,255,255,1) 100%);
@@ -78,7 +78,7 @@ img, embed, object, video {
     margin:7px;
     text-align:left;
     border-radius: 8px;
-    height: 500px;
+    min-height: 500px;
 
 }
 .black-box {
@@ -92,7 +92,7 @@ img, embed, object, video {
     margin:7px;
     text-align:left;
     border-radius: 8px;
-    height: 500px;
+    min-height: 500px;
 
 }
 
@@ -181,6 +181,50 @@ img, embed, object, video {
 
 .media-embed {
   text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .blue-box {
+      background: linear-gradient(45deg, rgba(0,162,255,1) 0%,rgba(0,120,255,1) 70%,rgba(0,120,255,1) 100%);
+      color: white;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      float:left;
+      width:96%;
+      padding:15px;
+      margin:7px;
+      text-align:left;
+      border-radius: 8px;
+      min-height: 500px;
+  }
+  .white-box {
+      background: linear-gradient(45deg, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 70%,rgba(255,255,255,1) 100%);
+      color: #000 !important;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      float:left;
+      width:96%;
+      padding:15px;
+      margin:7px;
+      text-align:left;
+      border-radius: 8px;
+      min-height: 500px;
+
+  }
+  .black-box {
+      background: linear-gradient(45deg, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 70%,rgba(0,0,0,1) 100%);
+      color: white;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      float:left;
+      width:96%;
+      padding:15px;
+      margin:7px;
+      text-align:left;
+      border-radius: 8px;
+      min-height: 500px;
+
+  }
 }
 
 /*
