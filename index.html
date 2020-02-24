@@ -5,91 +5,70 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta author="Jennifer Nicolay" />
-		<title>Plan A Förderseite</title>
-		<script language="javascript" type="text/javascript" src="slider.js"></script>
+		<title>Plan A Fördern</title>
+		<script src="count-up.js"></script>
 	</head>
 	<body class="background">
-		<header id="stickyHeader">
-		<script>
-			window.onscroll = function() {myFunction()};
-
-			var header = document.getElementById("stickyHeader");
-			var sticky = header.offsetTop;
-
-			function myFunction() {
-	  		if (window.pageYOffset > sticky) {
-	    	header.classList.add("sticky");
-	  	} else {
-	    	header.classList.remove("sticky");
-	  	}
-		}
-		</script>
-
-			<div class="header-text">
-				<img class="right" src="planA-Logo.png" alt="Plan A Logo" width="300px">
-<!--Hamburger-Menü-->
-				<nav>
-					<div id="menuToggle">
-						<input type="checkbox" />
-						<span></span>
-						<span></span>
-						<span></span>
-						<ul id="menu">
-							<a href="https://plan-a.jetzt"><li>Home</li></a>
-							<a href="#termine"><li>Anmelden</li></a>
-							<a href="#engagement"><li>Engagement</li></a>
-							<a href="#spenden"><li>Spenden</li></a>
-							<a href="#baseCamp"><li>baseCamp</li></a>
-							<a href="#impressum"><li>Impressum</li></a>
-						</ul>
-					</div>
-				</nav>
-<!--Menü Ende-->
+		<header>
+			<div class="logo-area">
+				<img class="right" src="planA-Logo.png" alt="Plan A Logo" width="200px">
 			</div>
+			<div class="parallax opacity"></div>
+
+<!--			<div class="pic-heading fullwidth-pic">
+				<img class="opacity" alt="Am Set von Plan A" src="img/image03.jpg">-->
+				<div class="caption">
+					<span class="border">
+            <h1>Danke für Ihre Unterstützung!</h1>
+<!--Count up goes here  -->
+
+						<h2>Fördersumme: <span id="primo" class="countup" cup-end="15000" cup-append="€" cup-prepend=""></span></h2>
+						<script>
+							var cu = new counterUp({
+								start: 0,
+								duration: 1000,
+								intvalues: true,
+								interval: 1,
+								prepend: '€',
+								append: ',00'
+							});
+							cu.start();
+						</script>
+						<h3><label for="file">Anteil Gesamtsumme: </label><progress id="file" value="15000" max="70000"> 15000 </progress></h3>
+						<a href="#support" class="button-link">Unterstützen Sie uns</a>
+					</span>
+				</div>
 		</header>
-			<div class="pic-heading fullwidth-pic content">
-				<img class="slider" name="slide" alt="Am Set von Plan A">
-				<span>
-					<img id="fade-in" src="plan-alle.png">
-				</span>
-			</div>
-		<section class="blog" id="orelse">
-			<div class="alter-text">
-				<h1>Spenden Sie jetzt für Vorbilder</h1>
-				<br>
-				<video src="trailer.mov" type="video/mov" width="1500" height="auto"
-					 poster="trailer-standbild.jpg" autobuffer autoplay controls>
-				<div>Leider unterstützt Ihr Browser kein HTML5. Wir empfehlen, eine aktuelle Version herunterzuladen.</div>
+		<main class="dark-grey">
+			<h1 id="support">Unterstützen Sie uns</h1>
+
+			<section class="blue-box dark-grey">
+            <h2>Werden Sie jetzt ein Vorbild!</h2>
+            <br>
+            <h3>Wir drehen Ihr Video für inspirierende Einblicke in a-typische Biografien.</h3>
+            <h3>Sie treffen die Jugendlichen an zwei Terminen zum persönlichen Austausch.</h3>
+      </section>
+			<section class="white-box">
+            <h2>Unterstützen Sie das JOBCAMP</h2>
+            <br>
+            <h3>Ermöglichen Sie echte Chancen!</h3>
+            <h3>Sie erhalten einen Stand auf der Jobmesse und bekommen qualitativ hochwertige Kontakte zu künftigen Praktikanten und Azubis!</h3>
+      </section>
+			<section class="black-box">
+            <h2>Spenden Sie für weitere Vorbilder!</h2>
+            <br>
+            <h3>Viele inspirierende Jugendliche können sich keinen Videodreh leisten.</h3>
+            <h3>Geben Sie anderen Menschen eine Stimme und fördern so noch vielfältigere Inspirationen auf Plan A!</h3>
+      </section>
+			<section class="media-embed">
+				<video src="trailer.mov" type="video/mov" width="90%" height="auto"
+					poster="img/trailer-standbild.png" autobuffer autoplay controls>
+					<div>Leider unterstützt Ihr Browser kein HTML5. Wir empfehlen, eine aktuelle Version herunterzuladen.</div>
 				</video>
-			</div>
-			<article class="left text">
-				<h2>PLAN A in Zahlen</h2>
-				<img class="left teaser" src="lampen.jpg" alt="Beleuchtung im Industrial Style" width="40%">
-					<p>A text in a nutshell is a nutshell in a text.</br>
-						And yet - it is a text and a nutshell!
-					</p>
-					<button id="myAcc" onclick="toggle()">Mehr lesen</button>
-					<p id="acc">Test Textblock bla bla bla bla</p>
-			</article>
-			<article class="left">
-				<h2>JobCamp</h2>
-				<img src="interview04.jpg" alt="Interview">
-			<p>Test Text blabla bla bla bla</p>
-			</article>
-			<article>
-				<h2>baseCamp</h2>
-				<img src="maske.jpg" alt="Testimonial in der Maske">
-				<p>Test Text bla bla bla</p>
-			</article>
-		</section>
-		<section class="blog">
-			<h1 class="alter-text">Besuchen Sie das baseCamp in Frankfurt</h1>
-		</section>
-		<footer>Last updated: Jan 2020 // Page created for Plan A Initiative
-		</footer>
+			</section>
+		</main>
 	</body>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="menu.css">
+	<link rel="stylesheet" type="text/css" href="design.css">
 <!--	<link rel="stylesheet" type="text/css" href="opacity.css">
      	<script src="functions.js"></script>-->
 </html>
