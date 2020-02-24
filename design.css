@@ -179,6 +179,14 @@ img, embed, object, video {
   text-align: center;
 }
 
+.font-white {
+  color: #ffffff;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 20px;
+}
+
 .media-embed {
   text-align: center;
 }
