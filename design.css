@@ -24,7 +24,7 @@ img, embed, object, video {
   max-width: 100%;
 }
 .parallax {
-  background-image: url("image03.jpg");
+  background-image: url("img/image03.jpg");
   height: 700px;
   background-attachment: fixed;
   background-position: center;
@@ -39,8 +39,12 @@ img, embed, object, video {
   float: right;
 }
 
-.background {
-  background-color: #171717;
+.background-dark {
+  background-color: #000;
+}
+
+.background-light {
+  background-color: #E8E8E8;
 }
 
 .caption {
@@ -65,7 +69,7 @@ img, embed, object, video {
     margin:7px;
     text-align:left;
     border-radius: 8px;
-    min-height: 500px;
+    min-height: 700px;
 }
 .white-box {
     background: linear-gradient(45deg, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 70%,rgba(255,255,255,1) 100%);
@@ -78,7 +82,7 @@ img, embed, object, video {
     margin:7px;
     text-align:left;
     border-radius: 8px;
-    min-height: 500px;
+    min-height: 700px;
 
 }
 .black-box {
@@ -92,7 +96,7 @@ img, embed, object, video {
     margin:7px;
     text-align:left;
     border-radius: 8px;
-    min-height: 500px;
+    min-height: 700px;
 
 }
 
@@ -173,10 +177,50 @@ img, embed, object, video {
   color: #000;
 }
 
+.button-black {
+  font-family: Roboto,-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Oxygen,Ubuntu,Cantarell,"Open Sans",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-direction: normal;
+  box-sizing: inherit;
+  outline: none;
+  position: relative;
+  line-height: 1.45;
+  font-weight: bold;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  background: none;
+  border-color: #000;
+  color: #000;
+  border-width: 2px;
+  border-style: solid;
+  text-decoration: none;
+  padding: 8px 20px 10px;
+  border-radius: 25px;
+  min-width: 170px;
+  max-width: 100%;
+  transition: all 0.15s ease-in-out;
+  font-size: calc(17px + 1 * ((100vw - 400px) / 810));
+  margin-top: calc(2vw + 20px);
+}
+
+.button-black:hover {
+  background: #000;
+  border-color: #000;
+  color: #fff;
+}
+
 #support {
-  background-color: #171717;
   color: #ffffff;
   text-align: center;
+}
+
+.table {
+  width: 25%;
+  height: 250px;
+  padding: 20px;
+  float: left;
 }
 
 .font-white {
